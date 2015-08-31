@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		//Just Testing Iron
 	}
 	
 	// Update is called once per frame

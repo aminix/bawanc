@@ -28,7 +28,8 @@ public class wowc : MonoBehaviour {
 	void Update () 
 	{
 		grounded = Physics.Linecast (transform.position, groundCheck.position);//, 1 << LayerMask.NameToLayer("Ground"));
-		
+
+
 		if (Input.GetButtonDown("Jump") && grounded)
 		{
 			jump = true;
@@ -38,6 +39,7 @@ public class wowc : MonoBehaviour {
 	void FixedUpdate()
 	{
 		float h = Input.GetAxis("Horizontal");
+
 		
 		//anim.SetFloat("Speed", Mathf.Abs(h));
 		
@@ -74,13 +76,19 @@ public class wowc : MonoBehaviour {
 		//print (other.name);
 		switch (other.tag) {
 		case "orb_blue" :
-			head.gameObject.GetComponent<Renderer>().material.color = other.gameObject.GetComponent<Renderer>().material.color;
+			head.gameObject.GetComponent<Renderer>().material.color = Color.blue;// other.gameObject.GetComponent<Renderer>().material.color;
+			SkyBoXScript.Instance.ChangeToBlue();
+			Debug.Log("Blue");
 			break;
 		case "orb_green" :
-			head.gameObject.GetComponent<Renderer>().material.color = other.gameObject.GetComponent<Renderer>().material.color;
+			head.gameObject.GetComponent<Renderer>().material.color = Color.green;// other.gameObject.GetComponent<Renderer>().material.color;
+			SkyBoXScript.Instance.ChangeToGreen();
+			Debug.Log("Green");
 			break;
 		case "orb_red" :
-			head.gameObject.GetComponent<Renderer>().material.color = other.gameObject.GetComponent<Renderer>().material.color;
+			head.gameObject.GetComponent<Renderer>().material.color = Color.red;// other.gameObject.GetComponent<Renderer>().material.color;
+			SkyBoXScript.Instance.ChangeToRed();
+			Debug.Log("Red");
 			break;
 
 		}

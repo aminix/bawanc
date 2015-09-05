@@ -2,11 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-<<<<<<< HEAD
   serializedVersion: 6
-=======
-  serializedVersion: 5
->>>>>>> origin/master
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -15,10 +11,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
-<<<<<<< HEAD
   stringTagMap: {}
-=======
->>>>>>> origin/master
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -88,7 +81,6 @@ Material:
     m_Floats:
       data:
         first:
-<<<<<<< HEAD
           name: _SrcBlend
         second: 1
       data:
@@ -97,18 +89,12 @@ Material:
         second: 0
       data:
         first:
-=======
->>>>>>> origin/master
           name: _Cutoff
         second: .5
       data:
         first:
           name: _Exposure
-<<<<<<< HEAD
         second: .00999999978
-=======
-        second: 4.08995628
->>>>>>> origin/master
       data:
         first:
           name: _SunSize
@@ -119,17 +105,6 @@ Material:
         second: .349999994
       data:
         first:
-<<<<<<< HEAD
-=======
-          name: _SrcBlend
-        second: 1
-      data:
-        first:
-          name: _DstBlend
-        second: 0
-      data:
-        first:
->>>>>>> origin/master
           name: _Parallax
         second: .0199999996
       data:
@@ -180,11 +155,7 @@ Material:
       data:
         first:
           name: _SkyTint
-<<<<<<< HEAD
         second: {r: 0, g: 1, b: 0, a: 1}
-=======
-        second: {r: 1, g: 0, b: 0, a: 1}
->>>>>>> origin/master
       data:
         first:
           name: _GroundColor

@@ -129,6 +129,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: deec1fe5d607a5745b855aa23b9e0005, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD:Assets/Scenes/LevelTemplate.unity
 --- !u!1001 &294229975
 Prefab:
   m_ObjectHideFlags: 0
@@ -211,6 +212,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1db90e5610762649b7cfacb5f526346, type: 3}
   m_IsPrefabParent: 0
+=======
+>>>>>>> origin/master:Assets/Scenes/LevelTemplate.unity
 --- !u!1 &413833336
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,12 +311,18 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
+<<<<<<< HEAD:Assets/Scenes/LevelTemplate.unity
   m_TargetEye: 3
+=======
+>>>>>>> origin/master:Assets/Scenes/LevelTemplate.unity
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+<<<<<<< HEAD:Assets/Scenes/LevelTemplate.unity
   m_StereoMirrorMode: 0
+=======
+>>>>>>> origin/master:Assets/Scenes/LevelTemplate.unity
 --- !u!4 &413833343
 Transform:
   m_ObjectHideFlags: 0
@@ -429,7 +438,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 821274277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD:Assets/Scenes/LevelTemplate.unity
   m_LocalPosition: {x: 4.9000001, y: 2.70000005, z: 0}
+=======
+  m_LocalPosition: {x: -9.39999962, y: 2.70000005, z: 0}
+>>>>>>> origin/master:Assets/Scenes/LevelTemplate.unity
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 828816780}
@@ -999,16 +1012,28 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1256303026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD:Assets/Scenes/LevelTemplate.unity
   m_LocalPosition: {x: 11.3000002, y: 2.51999998, z: 0}
+=======
+  m_LocalPosition: {x: -33.9000015, y: 3.9000001, z: -5.0999999}
+>>>>>>> origin/master:Assets/Scenes/LevelTemplate.unity
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+<<<<<<< HEAD:Assets/Scenes/LevelTemplate.unity
 --- !u!4 &1439671863 stripped
 Transform:
   m_PrefabParentObject: {fileID: 435544, guid: 32922a1b34fa44547aad94130c55db46, type: 2}
   m_PrefabInternal: {fileID: 830714472}
 --- !u!4 &1581359515 stripped
+=======
+--- !u!4 &1439671863
+Transform:
+  m_PrefabParentObject: {fileID: 435544, guid: 32922a1b34fa44547aad94130c55db46, type: 2}
+  m_PrefabInternal: {fileID: 830714472}
+--- !u!4 &1581359515
+>>>>>>> origin/master:Assets/Scenes/LevelTemplate.unity
 Transform:
   m_PrefabParentObject: {fileID: 478294, guid: deec1fe5d607a5745b855aa23b9e0005, type: 2}
   m_PrefabInternal: {fileID: 157975670}
@@ -1098,7 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01256a311d49b4be4b950bf998e837f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 821274277}
+  Player: {fileID: 0}
 --- !u!81 &1658509360
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1152,9 +1177,11 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+<<<<<<< HEAD:Assets/Scenes/LevelTemplate.unity
   m_StereoMirrorMode: 0
+=======
+>>>>>>> origin/master:Assets/Scenes/LevelTemplate.unity

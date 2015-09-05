@@ -851,10 +851,6 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: 
-    animationImportWarnings: 
-    animationRetargetingWarnings: 
-    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -3428,7 +3424,7 @@ ModelImporter:
       name: rig|Run
       takeName: rig|Run
       firstFrame: 0
-      lastFrame: 140
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

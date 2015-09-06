@@ -3,7 +3,6 @@ using System.Collections;
 
 public class wowc : MonoBehaviour {
 
-	public Transform head;
 	[HideInInspector] public bool facingRight = true;
 	[HideInInspector] public bool jump = false;
 	public float moveForce = 365f;
@@ -11,7 +10,7 @@ public class wowc : MonoBehaviour {
 	public float jumpForce = 1000f;
 	public Transform groundCheck;
 	public GameObject character; 
-	
+
 	private bool grounded = false;
 	private Animator anim;
 	private Rigidbody rb2d;
@@ -73,24 +72,70 @@ public class wowc : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
-		//print (other.name);
+
+		handlePowerTriggers (other);
+
+	}
+
+	private void handlePowerTriggers(Collider other) 
+	{
 		switch (other.tag) {
 		case "orb_blue" :
-			head.gameObject.GetComponent<Renderer>().material.color = Color.blue;// other.gameObject.GetComponent<Renderer>().material.color;
-			SkyBoXScript.Instance.ChangeToBlue();
 			Debug.Log("Blue");
+			SkyBoXScript.Instance.ChangeToBlue();
+			//adds power script if is not there already
+			if (transform.gameObject.GetComponent("BluePowerScript") == null) {
+				transform.gameObject.AddComponent<BluePowerScript>();
+			}
+			
 			break;
 		case "orb_green" :
-			head.gameObject.GetComponent<Renderer>().material.color = Color.green;// other.gameObject.GetComponent<Renderer>().material.color;
-			SkyBoXScript.Instance.ChangeToGreen();
 			Debug.Log("Green");
+			SkyBoXScript.Instance.ChangeToGreen();
+			
+			//adds power script if is not there already
+			if (transform.gameObject.GetComponent("GreenPowerScript") == null) {
+				transform.gameObject.AddComponent<GreenPowerScript>();
+			}
+			
 			break;
 		case "orb_red" :
-			head.gameObject.GetComponent<Renderer>().material.color = Color.red;// other.gameObject.GetComponent<Renderer>().material.color;
-			SkyBoXScript.Instance.ChangeToRed();
 			Debug.Log("Red");
+			SkyBoXScript.Instance.ChangeToRed();
+			
+			//adds power script if is not there already
+			if (transform.gameObject.GetComponent("RedPowerScript") == null) {
+				transform.gameObject.AddComponent<RedPowerScript>();
+			}
 			break;
-
+		case "orb_yellow" :
+			Debug.Log("Yellow");
+			//	SkyBoXScript.Instance.ChangeToRed();
+			
+			//adds power script if is not there already
+			if (transform.gameObject.GetComponent("YellowPowerScript") == null) {
+				transform.gameObject.AddComponent<YellowPowerScript>();
+			}
+			break;
+		case "orb_purple" :
+			Debug.Log("Purple");
+			//	SkyBoXScript.Instance.ChangeToRed();
+			
+			//adds power script if is not there already
+			if (transform.gameObject.GetComponent("PurplePowerScript") == null) {
+				transform.gameObject.AddComponent<PurplePowerScript>();
+			}
+			break;
+		case "orb_pink" :
+			Debug.Log("Pink");
+			//	SkyBoXScript.Instance.ChangeToRed();
+			
+			//adds power script if is not there already
+			if (transform.gameObject.GetComponent("PinkPowerScript") == null) {
+				transform.gameObject.AddComponent<PinkPowerScript>();
+			}
+			break;
+			
 		}
 	}
 }

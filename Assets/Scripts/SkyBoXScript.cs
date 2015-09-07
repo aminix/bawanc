@@ -37,7 +37,7 @@ public class SkyBoXScript : MonoBehaviour {
 	void Start () 
 	{
 		Instance = this;
-		mainLight = GetComponent<Light>();
+	//	mainLight = GetComponent<Light>();
 
 		skMat = RenderSettings.skybox;
 		defExposure = 0.01f;

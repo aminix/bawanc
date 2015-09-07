@@ -84,7 +84,8 @@ public class wowc : MonoBehaviour {
 			Debug.Log("Blue");
 			SkyBoXScript.Instance.ChangeToBlue();
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("BluePowerScript") == null) {
+			if (transform.gameObject.GetComponent("BluePowerScript") == null) 
+			{
 				transform.gameObject.AddComponent<BluePowerScript>();
 			}
 			
@@ -94,7 +95,8 @@ public class wowc : MonoBehaviour {
 			SkyBoXScript.Instance.ChangeToGreen();
 			
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("GreenPowerScript") == null) {
+			if (transform.gameObject.GetComponent("GreenPowerScript") == null) 
+			{
 				transform.gameObject.AddComponent<GreenPowerScript>();
 			}
 			
@@ -104,8 +106,15 @@ public class wowc : MonoBehaviour {
 			SkyBoXScript.Instance.ChangeToRed();
 			
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("RedPowerScript") == null) {
+			if (transform.gameObject.GetComponent("RedPowerScript") == null) 
+			{
 				transform.gameObject.AddComponent<RedPowerScript>();
+			}
+			else
+			{
+				var x = transform.GetComponent<RedPowerScript>()as RedPowerScript;
+				x.enabled = true;
+
 			}
 			break;
 		case "orb_yellow" :
@@ -113,7 +122,8 @@ public class wowc : MonoBehaviour {
 			//	SkyBoXScript.Instance.ChangeToRed();
 			
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("YellowPowerScript") == null) {
+			if (transform.gameObject.GetComponent("YellowPowerScript") == null) 
+			{
 				transform.gameObject.AddComponent<YellowPowerScript>();
 			}
 			break;
@@ -122,7 +132,8 @@ public class wowc : MonoBehaviour {
 			//	SkyBoXScript.Instance.ChangeToRed();
 			
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("PurplePowerScript") == null) {
+			if (transform.gameObject.GetComponent("PurplePowerScript") == null) 
+			{
 				transform.gameObject.AddComponent<PurplePowerScript>();
 			}
 			break;
@@ -131,7 +142,8 @@ public class wowc : MonoBehaviour {
 			//	SkyBoXScript.Instance.ChangeToRed();
 			
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("PinkPowerScript") == null) {
+			if (transform.gameObject.GetComponent("PinkPowerScript") == null) 
+			{
 				transform.gameObject.AddComponent<PinkPowerScript>();
 			}
 			break;

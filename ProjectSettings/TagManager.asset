@@ -8,6 +8,7 @@ TagManager:
   - orb_green
   - orb_red
   - Obstacle
+  - Fire
   layers:
   - Default
   - TransparentFX

@@ -135,38 +135,105 @@ MonoBehaviour:
   _line: {fileID: 12000000}
   _ps: {fileID: 19800000}
   _sortParticleOnLife: 1
-  _sortParticleOnDistance: 1
+  _sortParticleOnDistance: 0
   _freezeZeroParticle: 1
   _centerOddParticles: 0
   _gradients: 1
   _gradientStart:
-    key0: {}
-    key1: {}
-    key2: {}
-    key3: {}
-    key4: {}
-    key5: {}
-    key6: {}
-    key7: {}
+    key0:
+      serializedVersion: 2
+      rgba: 4294967295
+    key1:
+      serializedVersion: 2
+      rgba: 4294967295
+    key2:
+      serializedVersion: 2
+      rgba: 0
+    key3:
+      serializedVersion: 2
+      rgba: 0
+    key4:
+      serializedVersion: 2
+      rgba: 0
+    key5:
+      serializedVersion: 2
+      rgba: 0
+    key6:
+      serializedVersion: 2
+      rgba: 0
+    key7:
+      serializedVersion: 2
+      rgba: 0
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _gradientEnd:
-    key0: {}
-    key1: {}
-    key2: {}
-    key3: {}
-    key4: {}
-    key5: {}
-    key6: {}
-    key7: {}
+    key0:
+      serializedVersion: 2
+      rgba: 4294967295
+    key1:
+      serializedVersion: 2
+      rgba: 4294967295
+    key2:
+      serializedVersion: 2
+      rgba: 0
+    key3:
+      serializedVersion: 2
+      rgba: 0
+    key4:
+      serializedVersion: 2
+      rgba: 0
+    key5:
+      serializedVersion: 2
+      rgba: 0
+    key6:
+      serializedVersion: 2
+      rgba: 0
+    key7:
+      serializedVersion: 2
+      rgba: 0
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _gradientSpeed: 50
   _randomGradientStart: 0
   _gradientLight: 1
   _light: {fileID: 10800000}
+  _vertexCountIntensity: 0
+  _vertexCountIntensityMultiplier: .00999999978
   _flicker: 0
   _lightFlicker:
+    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 1
@@ -179,16 +246,21 @@ MonoBehaviour:
   _scale: 0
   _startScaleMultiplier: 1
   _startScale:
+    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
   _endScaleMultiplier: 1
   _endScale:
+    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
   _scaleSpeed: 1
   _rotationSpeed: {x: 0, y: 0, z: 0}
+  _sortInterval: 2
+  _saveMat: {fileID: 2100000, guid: 2694e1ceb85d9ae46ac0ba9edefa7319, type: 2}
+  _cutEndSegments: 4
 --- !u!120 &12000000
 LineRenderer:
   m_ObjectHideFlags: 1

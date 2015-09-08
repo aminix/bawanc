@@ -91,7 +91,13 @@ public class SkyBoXScript : MonoBehaviour {
 		SetExposure(exposure);
 		OrbActivated = true;
 	}
-	
+	public void ChangeToYellow()
+	{
+		skMat.SetColor("_SkyTint",Color.yellow);
+		exposure = 4;
+		SetExposure(exposure);
+		OrbActivated = true;
+	}
 
 	public void SetExposure(float value)
 	{

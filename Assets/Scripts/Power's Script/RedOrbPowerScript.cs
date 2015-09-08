@@ -16,7 +16,7 @@ public class RedOrbPowerScript : MonoBehaviour {
 		//Add other Tags to ignore HERE
 		if(coll.tag == "Player" || coll.tag == "orb_green" || coll.tag == "orb_blue" ||
 		   coll.tag == "orb_red" || coll.tag == "orb_pink" || coll.tag == "orb_violet" ||
-		   coll.tag == "orb_black")// || "MoreTags"
+		   coll.tag == "orb_yellow" || coll.tag == "Switch" || coll.tag == "Floor")// || "MoreTags"
 		{
 			return;
 		}

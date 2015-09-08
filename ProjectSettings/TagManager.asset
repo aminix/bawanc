@@ -9,6 +9,10 @@ TagManager:
   - orb_red
   - Obstacle
   - Fire
+  - orb_yellow
+  - Electricity
+  - Switch
+  - Floor
   layers:
   - Default
   - TransparentFX

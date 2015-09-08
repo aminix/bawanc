@@ -48,6 +48,10 @@ public class HealthScriptForNPC : MonoBehaviour {
 		Destroy (gameObject);
 	}
 
+	public void ElectricDamage(float DamageValue)
+	{
+		Health -= DamageValue;
+	}
 
 	public void FireDamage(float DamageValue)
 	{

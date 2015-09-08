@@ -90,6 +90,7 @@ public class wowc : MonoBehaviour {
 			}
 			
 			break;
+
 		case "orb_green" :
 			Debug.Log("Green");
 			SkyBoXScript.Instance.ChangeToGreen();
@@ -101,6 +102,7 @@ public class wowc : MonoBehaviour {
 			}
 			
 			break;
+
 		case "orb_red" :
 			Debug.Log("Red");
 			SkyBoXScript.Instance.ChangeToRed();
@@ -112,21 +114,28 @@ public class wowc : MonoBehaviour {
 			}
 			else
 			{
+				//I'm taking Vars cuz .. just like that :D :P Change if you wanna. I dont give a shit.
 				var x = transform.GetComponent<RedPowerScript>()as RedPowerScript;
 				x.enabled = true;
-
 			}
 			break;
+
 		case "orb_yellow" :
 			Debug.Log("Yellow");
-			//	SkyBoXScript.Instance.ChangeToRed();
+				SkyBoXScript.Instance.ChangeToYellow();
 			
 			//adds power script if is not there already
 			if (transform.gameObject.GetComponent("YellowPowerScript") == null) 
 			{
 				transform.gameObject.AddComponent<YellowPowerScript>();
 			}
+			else
+			{
+				var x = transform.GetComponent<YellowPowerScript>()as YellowPowerScript;
+				x.enabled = true;
+			}
 			break;
+
 		case "orb_purple" :
 			Debug.Log("Purple");
 			//	SkyBoXScript.Instance.ChangeToRed();
@@ -137,6 +146,7 @@ public class wowc : MonoBehaviour {
 				transform.gameObject.AddComponent<PurplePowerScript>();
 			}
 			break;
+
 		case "orb_pink" :
 			Debug.Log("Pink");
 			//	SkyBoXScript.Instance.ChangeToRed();

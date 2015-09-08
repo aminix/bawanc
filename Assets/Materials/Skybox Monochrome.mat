@@ -85,7 +85,7 @@ Material:
       data:
         first:
           name: _Exposure
-        second: 5.05497837
+        second: 1.84495449
       data:
         first:
           name: _SunSize
@@ -154,7 +154,7 @@ Material:
       data:
         first:
           name: _SkyTint
-        second: {r: 1, g: 0, b: 0, a: 1}
+        second: {r: 1, g: .921568632, b: .0156862754, a: 1}
       data:
         first:
           name: _GroundColor

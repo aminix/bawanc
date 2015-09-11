@@ -93,7 +93,12 @@ public class wowc : MonoBehaviour {
 			{
 				transform.gameObject.AddComponent<BluePowerScript>();
 			}
-			
+			else
+			{
+				var x = transform.GetComponent<BluePowerScript>()as BluePowerScript;
+				x.enabled = true;
+			}
+			break;
 			break;
 
 		case "orb_green" :

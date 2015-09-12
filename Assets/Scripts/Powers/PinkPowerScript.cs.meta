@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: e7ce1855832ab4c2cb26bddde19cd47b
-timeCreated: 1441564500
+timeCreated: 1441942769
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - jumpEffectPrefab: {fileID: 192556, guid: 8baf0d2cdc4344d78b703e57ae5b0a4d, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

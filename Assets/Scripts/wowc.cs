@@ -56,10 +56,15 @@ public class wowc : MonoBehaviour {
 		if (jump)
 		{
 			anim.SetTrigger("Jump");
-			rb2d.AddForce(new Vector2(0f, jumpForce));
-			jump = false;
+			Jump (jumpForce);
 		}
 	}
+
+	public void Jump(float force) {
+		rb2d.AddForce(new Vector2(0f, force));
+		jump = false;
+	}
+
 	
 	
 	void Flip()
@@ -141,10 +146,14 @@ public class wowc : MonoBehaviour {
 			//	SkyBoXScript.Instance.ChangeToRed();
 			
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("PurplePowerScript") == null) 
+			/*if (transform.gameObject.GetComponent("PurplePowerScript") == null) 
 			{
 				transform.gameObject.AddComponent<PurplePowerScript>();
 			}
+
+			purple is already a component because of the prefab im using
+			 */
+			transform.gameObject.GetComponent<PurplePowerScript>().enabled = true;
 			break;
 
 		case "orb_pink" :
@@ -155,6 +164,11 @@ public class wowc : MonoBehaviour {
 			if (transform.gameObject.GetComponent("PinkPowerScript") == null) 
 			{
 				transform.gameObject.AddComponent<PinkPowerScript>();
+			}
+			else
+			{
+				var x = transform.GetComponent<PinkPowerScript>()as PinkPowerScript;
+				x.enabled = true;
 			}
 			break;
 			

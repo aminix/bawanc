@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: 387bcbb8d412640fca6df597924bbc2b
-timeCreated: 1441564481
+timeCreated: 1442066160
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - hookPrefab: {fileID: 179988, guid: 546f82775a4af44e78b317f7cab48a1e, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

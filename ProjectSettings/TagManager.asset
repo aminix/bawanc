@@ -13,6 +13,13 @@ TagManager:
   - Electricity
   - Switch
   - Floor
+  - raiseEffect
+  - explosion
+  - Effect
+  - ground
+  - EFFECT
+  - orb_purple
+  - PurplePower
   layers:
   - Default
   - TransparentFX

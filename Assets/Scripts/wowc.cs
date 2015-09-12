@@ -141,10 +141,14 @@ public class wowc : MonoBehaviour {
 			//	SkyBoXScript.Instance.ChangeToRed();
 			
 			//adds power script if is not there already
-			if (transform.gameObject.GetComponent("PurplePowerScript") == null) 
+			/*if (transform.gameObject.GetComponent("PurplePowerScript") == null) 
 			{
 				transform.gameObject.AddComponent<PurplePowerScript>();
 			}
+
+			purple is already a component because of the prefab im using
+			 */
+			transform.gameObject.GetComponent<PurplePowerScript>().enabled = true;
 			break;
 
 		case "orb_pink" :

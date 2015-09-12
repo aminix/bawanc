@@ -99,7 +99,6 @@ public class wowc : MonoBehaviour {
 				x.enabled = true;
 			}
 			break;
-			break;
 
 		case "orb_green" :
 			Debug.Log("Green");

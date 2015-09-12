@@ -94,7 +94,7 @@ Material:
       data:
         first:
           name: _Exposure
-        second: .00991032459
+        second: .00999999978
       data:
         first:
           name: _SunSize

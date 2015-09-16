@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Game/Level 1.unity
+  - enabled: 1
+    path: Assets/Scenes/Game/Level 2.unity
+  - enabled: 1
     path: Assets/Scenes/Yellow Orb.unity
   - enabled: 1
     path: Assets/Scenes/Red Orb.unity

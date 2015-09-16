@@ -34,22 +34,12 @@ public class GameController : MonoBehaviour {
 		Debug.Log ("Character died :(");
 		character.transform.position = respawnPoint;
 	}
-
-	//Call when player clicks Start Game from menu
-	public void GameStart() 
-	{
-		Debug.Log ("Start game");
-		//this implementation depends on the menu, should hide the menu
-		// if the menu is in the scene, or load scene 0 if menu is in different scene
-	}
-
-	//Call when player finishes the game or quit
+	
+	//Call when player finishes the game
 	public void GameOver() 
 	{
 		Debug.Log ("Player finished game");
-		respawnPoint = new Vector3 (1, 0, 0); //first point
-		character.transform.position = respawnPoint;
-		//this method should probably have to change, show the start menu?
+		//call scene with credits?
 	}
 
 

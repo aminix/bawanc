@@ -29,7 +29,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	//Call when character dies, should be called from the object that killed the character
-	public void respawnCharacter() 
+	public void RespawnCharacter() 
 	{
 		Debug.Log ("Character died :(");
 		character.transform.position = respawnPoint;

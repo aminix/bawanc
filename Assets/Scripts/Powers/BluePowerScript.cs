@@ -13,7 +13,7 @@ public class BluePowerScript : MonoBehaviour {
 	public float		AddedSpeed = 15f; //the new max speed after the orb activation
 	public bool 		StartDuration; //the boolean trigger for the start and pause of the speed duration
 	public bool 		EnableSpeedUp; //the trigger to implement the speed
-
+    public Animator anim; //the character's animator 
     private GameObject rightHandSpeeder;
     private GameObject leftHandSpeeder;
     private GameObject rightFootSpeeder;
@@ -55,7 +55,9 @@ public class BluePowerScript : MonoBehaviour {
             leftFootSpeeder.SetActive(EnableSpeedUp);
             WowC.moveForce = 365f;
 			WowC.maxSpeed = 5f;
-		}
+            Time.timeScale = 1f;
+            anim.speed = 1;
+        }
 
 		if (Duration >= DashTime) { //if the Duration reached the DashTime limit, the Orb effect will be disabled.
             StartDuration = false;
@@ -67,13 +69,17 @@ public class BluePowerScript : MonoBehaviour {
             Duration = 0f;
 			WowC.moveForce = 365f;
 			WowC.maxSpeed = 5f;
-			this.enabled = false;
+            Time.timeScale = 1f;
+            anim.speed = 1; 
+            this.enabled = false;
 		}	
 	}
 
 	void SpeedUp(){ // where the speeding up part takes place.
-		WowC.moveForce = 365f * 2;
+		WowC.moveForce = 365f * 4;
 		WowC.maxSpeed = 5 + AddedSpeed;
+        Time.timeScale = 0.25f; // dividing or slowing down the whole scene speed to 1/4 of normal
+        anim.speed = 4; //speeding up the character animation speed to x4
       
     }
 

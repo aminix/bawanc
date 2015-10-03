@@ -55,7 +55,7 @@ public class wowc : MonoBehaviour {
 		
 		if (jump)
 		{
-			anim.SetTrigger("Jump");
+			//anim.SetTrigger("Jump");
 			Jump (jumpForce);
 		}
 	}
